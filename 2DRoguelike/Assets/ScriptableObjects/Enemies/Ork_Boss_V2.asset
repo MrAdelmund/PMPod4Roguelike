@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c992c7975b4e4f541b2a636f6efb8b76, type: 3}
+  m_Name: Ork_Boss_V2
+  m_EditorClassIdentifier: 
+  enemyName: Orc Boss
+  sprite: {fileID: -888524598, guid: 26610b3eab956fb4d85027bf6943e692, type: 3}
+  maxHealth: 4500
+  moveSpeed: 3
+  damage: 25
+  spawnWeight: 1
+  enemyPrefab: {fileID: 1495733750903697733, guid: 2ef19659f2b0c1d4ab6cdf75d06361ad, type: 3}
+  behaviorPrefab: {fileID: 6279729398361406064, guid: ec14ed8ca30aa13438756be26e4f8ba8, type: 3}

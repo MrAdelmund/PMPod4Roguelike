@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d588794e555f0c48a3ca25cf27eef25, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  className: Default
+  description: Just a simple potato of a human being
+  icon: {fileID: 0}
+  maxHealth: 100
+  moveSpeed: 5
+  damageMultiplier: 1
+  regenInterval: 5
+  regenAmount: 0
+  startingWeapon: {fileID: 11400000, guid: c17f786d496903643898d6102bd1cd2a, type: 2}

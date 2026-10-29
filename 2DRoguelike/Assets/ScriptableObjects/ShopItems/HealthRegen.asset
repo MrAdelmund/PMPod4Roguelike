@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975b1762b0430894790d01dee7582a53, type: 3}
+  m_Name: HealthRegen
+  m_EditorClassIdentifier: 
+  itemName: Health regen
+  type: 2
+  cost: 1
+  weapon: {fileID: 0}
+  statUpgrade: {fileID: 11400000, guid: e9c6670c1bb67a64aaf088824ebd72d4, type: 2}
+  icon: {fileID: 21300000, guid: 4e00491a45a8fb24d91fcb870c0364fa, type: 3}
+  description: Regain 5 health every 5 seconds

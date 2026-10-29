@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24c472f9bcf39844a9343267f18848e, type: 3}
+  m_Name: Sniper
+  m_EditorClassIdentifier: 
+  weaponName: Sniper
+  sprite: {fileID: 21300000, guid: f70acc0460cd4a74480b1c9f8057c5e3, type: 3}
+  damage: 200
+  fireRate: 0.1
+  projectileSpeed: 10
+  range: 10
+  projectilePrefab: {fileID: 4493983500933458435, guid: 72657a49539485043bc7fe7af565a4a5, type: 3}
