@@ -58,6 +58,8 @@ public class PlayerStats : MonoBehaviour
                 regenAmount += upgrade.flatBonus;
                 regenAmount *= (1 + upgrade.percentBonus);
                 break;
+
+            
         }
     }
 

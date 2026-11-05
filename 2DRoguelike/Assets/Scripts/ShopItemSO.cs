@@ -16,7 +16,7 @@ public class ShopItemSO : ScriptableObject
     public UpgradeSO statUpgrade;
 
     [Header("Relic (if type=Relic)")]
-    // public RelicSO relic; // future expansion
+    //public RelicSO relic; // future expansion
 
     public Sprite icon;          // optional for UI
     [TextArea] public string description; // for UI display

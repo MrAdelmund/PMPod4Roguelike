@@ -223,7 +223,7 @@ Transform:
   m_GameObject: {fileID: 66477012}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.556, y: 0.32, z: 1}
+  m_LocalPosition: {x: 0.573, y: 0.337, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -530,7 +530,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1229276168}
         m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
         m_MethodName: RerollShop
         m_Mode: 1
@@ -2817,6 +2817,7 @@ MonoBehaviour:
   playerCurrency: {fileID: 1741279970}
   weaponInventory: {fileID: 1741279975}
   playerStats: {fileID: 1741279969}
+  projectile: {fileID: 4493983500933458435, guid: 72657a49539485043bc7fe7af565a4a5, type: 3}
   shopPanel: {fileID: 1893523622}
   statContainer: {fileID: 1232942157}
   weaponContainer: {fileID: 824262568}
@@ -2827,13 +2828,12 @@ MonoBehaviour:
   baseRerollCost: 5
   statPool:
   - {fileID: 11400000, guid: 416d8d4a29baf8c49ab8e861c4084a89, type: 2}
+  - {fileID: 11400000, guid: bcd3e897590ed8e43966231aea95ea07, type: 2}
   weaponPool:
   - {fileID: 11400000, guid: d1d9d174277c1dc4caf51a42557e05a0, type: 2}
   - {fileID: 11400000, guid: 02192158f93547241b9f6c274bf9c4f7, type: 2}
   - {fileID: 11400000, guid: 549dd3b4c903c6c4380e5d3725489dec, type: 2}
-  relicPool:
-  - {fileID: 11400000, guid: bcd3e897590ed8e43966231aea95ea07, type: 2}
-  - {fileID: 11400000, guid: 9478f652d47cb6a40a207d123c910fe3, type: 2}
+  relicPool: []
 --- !u!114 &1229276169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2865,6 +2865,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e62ee9bb8e620ca48b6e12e0a3ae1847, type: 2}
   - {fileID: 11400000, guid: 9deea8d48b0b0a7488f646f2b7e01157, type: 2}
   - {fileID: 11400000, guid: 670c16515cefdcd46bcc817c0531b0db, type: 2}
+  - {fileID: 11400000, guid: e9c6670c1bb67a64aaf088824ebd72d4, type: 2}
   playerStats: {fileID: 1741279969}
   upgradeUI: {fileID: 1272380302}
 --- !u!114 &1229276171
@@ -3512,7 +3513,7 @@ Transform:
   m_GameObject: {fileID: 1378550317}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.526, y: -0.405, z: 1}
+  m_LocalPosition: {x: 0.55, y: -0.397, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4170,7 +4171,7 @@ RectTransform:
   - {fileID: 2110624433}
   - {fileID: 639367573}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.354}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -4557,7 +4558,7 @@ Transform:
   m_GameObject: {fileID: 1523364769}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.626, y: -0.01, z: 1}
+  m_LocalPosition: {x: 0.69, y: -0.01, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4704,8 +4705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerClass: {fileID: 11400000, guid: 2bcbeb8194846ad44ad4be7b36970614, type: 2}
-  currentHealth: 100
-  maxHealth: 100
+  currentHealth: 0
+  maxHealth: 0
   moveSpeed: 1
   damageMultiplier: 1
   regenInterval: 0

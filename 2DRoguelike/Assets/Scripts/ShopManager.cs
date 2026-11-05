@@ -9,6 +9,7 @@ public class ShopManager : MonoBehaviour
     public PlayerCurrency playerCurrency;
     public WeaponInventory weaponInventory;
     public PlayerStats playerStats;
+    public Projectile projectile;
 
     public GameObject shopPanel;
 
@@ -106,10 +107,12 @@ public class ShopManager : MonoBehaviour
                 break;
             case ShopItemType.Stat:
                 playerStats.ApplyUpgrade(item.statUpgrade);
+                projectile.ApplyUpgrade(item.statUpgrade);
                 break;
             case ShopItemType.Relic:
-                // future
+                //playerStats.ApplyRelic(item.relic); finish later
                 break;
+            
         }
 
         currentShopItems.Remove(item);
