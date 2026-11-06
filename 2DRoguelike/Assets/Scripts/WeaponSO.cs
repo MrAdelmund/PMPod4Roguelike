@@ -3,7 +3,17 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Roguelite/Weapon")]
 public class WeaponSO : ScriptableObject
 {
-    [Header("Identity")]
+    public void ApplyUpgrade(UpgradeSO upgrade)
+    {
+        switch (upgrade.statType)
+        {
+            case PlayerStatType.ShotSpeed:
+                fireRate += upgrade.flatBonus;
+                fireRate *= (1 + upgrade.percentBonus);
+                break;
+        }
+    } 
+        [Header("Identity")]
     public string weaponName;
     public Sprite sprite;
 

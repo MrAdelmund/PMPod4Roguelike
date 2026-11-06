@@ -9,7 +9,7 @@ public class ShopManager : MonoBehaviour
     public PlayerCurrency playerCurrency;
     public WeaponInventory weaponInventory;
     public PlayerStats playerStats;
-    public Projectile projectile;
+    public WeaponSO projectile;
 
     public GameObject shopPanel;
 

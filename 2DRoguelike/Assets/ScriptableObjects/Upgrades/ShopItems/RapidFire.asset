@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 975b1762b0430894790d01dee7582a53, type: 3}
   m_Name: RapidFire
   m_EditorClassIdentifier: 
-  itemName: Rapid Fire
+  itemName: Rapid Fire R
   type: 1
   cost: 1
   weapon: {fileID: 0}
   statUpgrade: {fileID: 11400000, guid: 7803d7ddf8d8ed949a64ac0f215122b1, type: 2}
   icon: {fileID: 21300000, guid: 1b99667c33e793d4ebc9e52c0416f725, type: 3}
-  description: Increase fire rate of all weapons by 20%
+  description: Increase fire rate of machine guns by 20%

@@ -2817,7 +2817,7 @@ MonoBehaviour:
   playerCurrency: {fileID: 1741279970}
   weaponInventory: {fileID: 1741279975}
   playerStats: {fileID: 1741279969}
-  projectile: {fileID: 4493983500933458435, guid: 72657a49539485043bc7fe7af565a4a5, type: 3}
+  projectile: {fileID: 11400000, guid: c17f786d496903643898d6102bd1cd2a, type: 2}
   shopPanel: {fileID: 1893523622}
   statContainer: {fileID: 1232942157}
   weaponContainer: {fileID: 824262568}
@@ -3331,7 +3331,7 @@ RectTransform:
   - {fileID: 996696579}
   - {fileID: 1893523623}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 7657.267, z: 360}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}

@@ -33,14 +33,7 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void ApplyUpgrade(UpgradeSO upgrade)
-    {
-        switch (upgrade.statType)
-        {
-            case PlayerStatType.ShotSpeed:
-                speed += upgrade.flatBonus;
-                speed *= (1 + upgrade.percentBonus);
-                break;
-        }
-    }
+    
+
+    
 }
