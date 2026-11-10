@@ -67,10 +67,12 @@ public class WeaponController : MonoBehaviour
 
     private void Fire(WeaponSO weapon, Transform spawnPoint)
     {
-        Enemy target = GetNearestEnemy();
-        if (target == null) return;
+  
 
-        Vector2 dir = (target.transform.position - spawnPoint.GetChild(0).transform.position).normalized;
+         Vector3 mousePos = Input.mousePosition;
+            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+            mousePos.z = 0;
+            Vector3 dir = mousePos - transform.position;
 
         // Rotate the spawn point (weapon sprite) to face the target
         spawnPoint.right = dir; // assumes the sprite points "up"
@@ -93,24 +95,4 @@ public class WeaponController : MonoBehaviour
             dir
         );
     }
-
-    private Enemy GetNearestEnemy()
-    {
-        Enemy closest = null;
-        float minDist = float.MaxValue;
-
-        foreach (Enemy e in Enemy.ActiveEnemies)
-        {
-            if (e == null) continue;
-
-            float d = Vector2.Distance(transform.position, e.transform.position);
-            if (d < minDist)
-            {
-                minDist = d;
-                closest = e;
-            }
-        }
-
-        return closest;
-    }
-}
+ }

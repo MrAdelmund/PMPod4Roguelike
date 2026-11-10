@@ -25,4 +25,5 @@ public class WeaponSO : ScriptableObject
 
     [Header("Prefabs")]
     public Projectile projectilePrefab;
+    
 }
