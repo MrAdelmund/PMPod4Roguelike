@@ -32,6 +32,16 @@ public class WeaponController : MonoBehaviour
                 fireTimers[weapon] = 0f;
             }
         }
+        var goPos = Camera.main.WorldToScreenPoint(target.position);
+        goPos.z = 0;
+        var mousePos = Input.mousePosition;
+        mousePos.z = 0;
+
+        var dist = Vector3.Distance(goPos, mousePos);
+        var dir = (mousePos - goPos).normalized;
+    
+
+       
     }
 
     public void RefreshWeapons(List<WeaponSO> weapons)
@@ -41,7 +51,7 @@ public class WeaponController : MonoBehaviour
         fireTimers.Clear();
         for (int i = 0; i < equippedWeapons.Count; i++)
         {
-            if(!fireTimers.ContainsKey(equippedWeapons[i]))
+            if (!fireTimers.ContainsKey(equippedWeapons[i]))
                 fireTimers.Add(equippedWeapons[i], 0f);
         }
 
@@ -67,12 +77,15 @@ public class WeaponController : MonoBehaviour
 
     private void Fire(WeaponSO weapon, Transform spawnPoint)
     {
-  
-
-         Vector3 mousePos = Input.mousePosition;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-            mousePos.z = 0;
-            Vector3 dir = mousePos - transform.position;
+        var goPos = Camera.main.WorldToScreenPoint(target.position);
+        goPos.z = 0;
+        var mousePos = Input.mousePosition;
+        mousePos.z = 0;
+        var dist = Vector3.Distance(goPos, mousePos);
+        var dir = (mousePos - goPos).normalized;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+        mousePos.z = 0;
+        
 
         // Rotate the spawn point (weapon sprite) to face the target
         spawnPoint.right = dir; // assumes the sprite points "up"
@@ -95,4 +108,8 @@ public class WeaponController : MonoBehaviour
             dir
         );
     }
- }
+    public Transform target;
+    float radiusInPixels = 150;
+
+   
+}
