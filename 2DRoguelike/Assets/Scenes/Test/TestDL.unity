@@ -2866,6 +2866,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9deea8d48b0b0a7488f646f2b7e01157, type: 2}
   - {fileID: 11400000, guid: 670c16515cefdcd46bcc817c0531b0db, type: 2}
   - {fileID: 11400000, guid: e9c6670c1bb67a64aaf088824ebd72d4, type: 2}
+  - {fileID: 11400000, guid: 7803d7ddf8d8ed949a64ac0f215122b1, type: 2}
   playerStats: {fileID: 1741279969}
   upgradeUI: {fileID: 1272380302}
 --- !u!114 &1229276171
@@ -4714,6 +4715,7 @@ MonoBehaviour:
   regenInterval: 0
   regenAmount: 0
   regenTimer: 0
+  shotSpeed: 1
 --- !u!114 &1741279970
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class PlayerStats : MonoBehaviour
     public float regenAmount;
 
     public float regenTimer;
+    public float shotSpeed;
     private bool dead = false;
     public void Initialize(PlayerClassSO newClass)
     {
@@ -59,7 +60,12 @@ public class PlayerStats : MonoBehaviour
                 regenAmount *= (1 + upgrade.percentBonus);
                 break;
 
-            
+            case PlayerStatType.ShotSpeed:
+                Debug.Log("Starting shot speed " + shotSpeed);
+                shotSpeed += upgrade.flatBonus;
+                shotSpeed *= (1 - 1 / upgrade.percentBonus);
+                Debug.Log("Ending shot speed " + shotSpeed);
+                break;
         }
     }
 

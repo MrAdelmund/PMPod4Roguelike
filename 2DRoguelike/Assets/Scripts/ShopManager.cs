@@ -107,7 +107,7 @@ public class ShopManager : MonoBehaviour
                 break;
             case ShopItemType.Stat:
                 playerStats.ApplyUpgrade(item.statUpgrade);
-                projectile.ApplyUpgrade(item.statUpgrade);
+                //rojectile.ApplyUpgrade(item.statUpgrade);
                 break;
             case ShopItemType.Relic:
                 //playerStats.ApplyRelic(item.relic); finish later

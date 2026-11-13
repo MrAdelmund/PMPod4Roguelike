@@ -25,7 +25,7 @@ public class WeaponController : MonoBehaviour
             fireTimers[weapon] += Time.deltaTime;
             float interval = 1f / weapon.fireRate;
 
-            if (fireTimers[weapon] >= interval)
+            if (fireTimers[weapon] >= interval * stats.shotSpeed)
             {
                 // Pass the corresponding slot as the spawn point
                 Fire(weapon, i < weaponSlots.Count ? weaponSlots[i] : transform);

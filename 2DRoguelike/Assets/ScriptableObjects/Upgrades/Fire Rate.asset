@@ -17,6 +17,6 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 1b99667c33e793d4ebc9e52c0416f725, type: 3}
   statType: 4
   flatBonus: 0
-  percentBonus: 0.2
+  percentBonus: 20
   canStack: 1
   maxStacks: 0
