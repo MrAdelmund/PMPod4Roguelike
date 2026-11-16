@@ -19,4 +19,4 @@ MonoBehaviour:
   flatBonus: 0
   percentBonus: 20
   canStack: 1
-  maxStacks: 0
+  maxStacks: 8

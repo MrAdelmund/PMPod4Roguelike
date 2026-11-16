@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Shotgun
   type: 0
-  cost: 1
+  cost: 10
   weapon: {fileID: 11400000, guid: d7e0558d77fbc7b49bb72eef771c2310, type: 2}
   statUpgrade: {fileID: 0}
   icon: {fileID: 0}

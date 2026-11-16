@@ -2833,6 +2833,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d1d9d174277c1dc4caf51a42557e05a0, type: 2}
   - {fileID: 11400000, guid: 02192158f93547241b9f6c274bf9c4f7, type: 2}
   - {fileID: 11400000, guid: 549dd3b4c903c6c4380e5d3725489dec, type: 2}
+  - {fileID: 11400000, guid: 385bb01cb4ec6ce419c17423da19a132, type: 2}
   relicPool: []
 --- !u!114 &1229276169
 MonoBehaviour:
@@ -2866,7 +2867,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9deea8d48b0b0a7488f646f2b7e01157, type: 2}
   - {fileID: 11400000, guid: 670c16515cefdcd46bcc817c0531b0db, type: 2}
   - {fileID: 11400000, guid: e9c6670c1bb67a64aaf088824ebd72d4, type: 2}
-  - {fileID: 11400000, guid: 7803d7ddf8d8ed949a64ac0f215122b1, type: 2}
   playerStats: {fileID: 1741279969}
   upgradeUI: {fileID: 1272380302}
 --- !u!114 &1229276171

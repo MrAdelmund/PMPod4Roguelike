@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: 10% Max HP
   type: 1
-  cost: 1
+  cost: 25
   weapon: {fileID: 0}
   statUpgrade: {fileID: 11400000, guid: 9deea8d48b0b0a7488f646f2b7e01157, type: 2}
   icon: {fileID: 0}
