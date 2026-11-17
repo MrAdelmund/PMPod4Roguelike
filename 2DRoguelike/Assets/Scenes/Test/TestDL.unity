@@ -2924,7 +2924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9045f0cdc5f4134383d06a721f0a02d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingClass: {fileID: 11400000, guid: 2bcbeb8194846ad44ad4be7b36970614, type: 2}
+  startingClass: {fileID: 11400000, guid: f8eb0f2e9ce46254487efd06d1810d58, type: 2}
   playerStats: {fileID: 1741279969}
   weaponController: {fileID: 1741279968}
   playerInventory: {fileID: 1741279975}
@@ -4707,7 +4707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc0a972f95c2b0459c1618a2ae6d80a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerClass: {fileID: 11400000, guid: 2bcbeb8194846ad44ad4be7b36970614, type: 2}
+  playerClass: {fileID: 11400000, guid: f8eb0f2e9ce46254487efd06d1810d58, type: 2}
   currentHealth: 0
   maxHealth: 0
   moveSpeed: 1

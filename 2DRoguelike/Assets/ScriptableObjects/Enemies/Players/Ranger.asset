@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d588794e555f0c48a3ca25cf27eef25, type: 3}
-  m_Name: Rush
+  m_Name: Ranger
   m_EditorClassIdentifier: 
-  className: Rush
-  description: lighter faster character
+  className: Ranger
+  description: Low health, High speed & damage
   icon: {fileID: 0}
-  maxHealth: 75
-  moveSpeed: 7
-  damageMultiplier: 1
-  regenInterval: 4.5
+  maxHealth: 50
+  moveSpeed: 10
+  damageMultiplier: 1.5
+  regenInterval: 5
   regenAmount: 0
-  startingWeapon: {fileID: 11400000, guid: 2eb0488f60ef6e047ba4553fd122a443, type: 2}
+  startingWeapon: {fileID: 11400000, guid: 6648c748f6cdf9744826312d5af2e63b, type: 2}

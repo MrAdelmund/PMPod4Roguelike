@@ -17,7 +17,7 @@ public class PlayerStats : MonoBehaviour
     private bool dead = false;
     public void Initialize(PlayerClassSO newClass)
     {
-        playerClass = newClass;
+        //playerClass = newClass;
 
         maxHealth = playerClass.maxHealth;
         currentHealth = maxHealth;

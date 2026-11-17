@@ -50,7 +50,7 @@ public class ShopManager : MonoBehaviour
     {
         currentShopItems.Clear();
 
-        currentShopItems.AddRange(GetRandomItems(statPool, 4));
+        currentShopItems.AddRange(GetRandomItems(statPool, 2));
         currentShopItems.AddRange(GetRandomItems(weaponPool, 2));
         currentShopItems.AddRange(GetRandomItems(relicPool, 2));
     }
@@ -110,7 +110,7 @@ public class ShopManager : MonoBehaviour
                 //rojectile.ApplyUpgrade(item.statUpgrade);
                 break;
             case ShopItemType.Relic:
-                //playerStats.ApplyRelic(item.relic); finish later
+                //playerStats.ApplyRelic(item.relic); 
                 break;
             
         }
