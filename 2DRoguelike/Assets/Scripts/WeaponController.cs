@@ -25,13 +25,23 @@ public class WeaponController : MonoBehaviour
             fireTimers[weapon] += Time.deltaTime;
             float interval = 1f / weapon.fireRate;
 
-            if (fireTimers[weapon] >= interval)
+            if (fireTimers[weapon] >= interval * stats.shotSpeed)
             {
                 // Pass the corresponding slot as the spawn point
                 Fire(weapon, i < weaponSlots.Count ? weaponSlots[i] : transform);
                 fireTimers[weapon] = 0f;
             }
         }
+        var goPos = Camera.main.WorldToScreenPoint(target.position);
+        goPos.z = 0;
+        var mousePos = Input.mousePosition;
+        mousePos.z = 0;
+
+        var dist = Vector3.Distance(goPos, mousePos);
+        var dir = (mousePos - goPos).normalized;
+    
+
+       
     }
 
     public void RefreshWeapons(List<WeaponSO> weapons)
@@ -41,7 +51,7 @@ public class WeaponController : MonoBehaviour
         fireTimers.Clear();
         for (int i = 0; i < equippedWeapons.Count; i++)
         {
-            if(!fireTimers.ContainsKey(equippedWeapons[i]))
+            if (!fireTimers.ContainsKey(equippedWeapons[i]))
                 fireTimers.Add(equippedWeapons[i], 0f);
         }
 
@@ -67,10 +77,15 @@ public class WeaponController : MonoBehaviour
 
     private void Fire(WeaponSO weapon, Transform spawnPoint)
     {
-        Enemy target = GetNearestEnemy();
-        if (target == null) return;
-
-        Vector2 dir = (target.transform.position - spawnPoint.GetChild(0).transform.position).normalized;
+        var goPos = Camera.main.WorldToScreenPoint(target.position);
+        goPos.z = 0;
+        var mousePos = Input.mousePosition;
+        mousePos.z = 0;
+        var dist = Vector3.Distance(goPos, mousePos);
+        var dir = (mousePos - goPos).normalized;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+        mousePos.z = 0;
+        
 
         // Rotate the spawn point (weapon sprite) to face the target
         spawnPoint.right = dir; // assumes the sprite points "up"
@@ -93,24 +108,8 @@ public class WeaponController : MonoBehaviour
             dir
         );
     }
+    public Transform target;
+    float radiusInPixels = 150;
 
-    private Enemy GetNearestEnemy()
-    {
-        Enemy closest = null;
-        float minDist = float.MaxValue;
-
-        foreach (Enemy e in Enemy.ActiveEnemies)
-        {
-            if (e == null) continue;
-
-            float d = Vector2.Distance(transform.position, e.transform.position);
-            if (d < minDist)
-            {
-                minDist = d;
-                closest = e;
-            }
-        }
-
-        return closest;
-    }
+   
 }

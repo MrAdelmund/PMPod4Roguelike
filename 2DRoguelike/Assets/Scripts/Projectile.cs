@@ -3,7 +3,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float damage;
-    private float speed;
+    public float speed;
     private float range;
     private Vector2 startPosition;
 
@@ -33,5 +33,7 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
 
+    
 }

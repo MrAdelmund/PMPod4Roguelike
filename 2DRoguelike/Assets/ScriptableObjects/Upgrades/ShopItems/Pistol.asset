@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 975b1762b0430894790d01dee7582a53, type: 3}
-  m_Name: Sniper
+  m_Name: Pistol
   m_EditorClassIdentifier: 
-  itemName: Sniper
+  itemName: Pistol
   type: 0
-  cost: 1
-  weapon: {fileID: 11400000, guid: 6648c748f6cdf9744826312d5af2e63b, type: 2}
+  cost: 20
+  weapon: {fileID: 11400000, guid: 2eb0488f60ef6e047ba4553fd122a443, type: 2}
   statUpgrade: {fileID: 0}
   icon: {fileID: 0}
-  description: long range, high damage, low fire rate
+  description: A pistol with lower damage but higher speed

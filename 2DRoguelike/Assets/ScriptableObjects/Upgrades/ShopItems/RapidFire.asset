@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 975b1762b0430894790d01dee7582a53, type: 3}
-  m_Name: Health%
+  m_Name: RapidFire
   m_EditorClassIdentifier: 
-  itemName: 10% Max HP
+  itemName: Rapid Fire R
   type: 1
-  cost: 1
+  cost: 15
   weapon: {fileID: 0}
-  statUpgrade: {fileID: 11400000, guid: 9deea8d48b0b0a7488f646f2b7e01157, type: 2}
-  icon: {fileID: 0}
-  description: 10% bonus max HP
+  statUpgrade: {fileID: 11400000, guid: 7803d7ddf8d8ed949a64ac0f215122b1, type: 2}
+  icon: {fileID: 21300000, guid: 1b99667c33e793d4ebc9e52c0416f725, type: 3}
+  description: Increase fire rate of all guns by 20%

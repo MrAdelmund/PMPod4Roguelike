@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 742bb278ab4f36748b829c79f95c9eb6, type: 3}
   m_Name: Health Regen
   m_EditorClassIdentifier: 
-  upgradeName: Unlcok Health Regen
+  upgradeName: Unlock Health Regen
   description: Regain 5 health every 5 seconds
   icon: {fileID: 21300000, guid: 4e00491a45a8fb24d91fcb870c0364fa, type: 3}
   statType: 3

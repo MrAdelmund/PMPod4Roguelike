@@ -9,6 +9,7 @@ public class ShopManager : MonoBehaviour
     public PlayerCurrency playerCurrency;
     public WeaponInventory weaponInventory;
     public PlayerStats playerStats;
+    public WeaponSO projectile;
 
     public GameObject shopPanel;
 
@@ -49,7 +50,7 @@ public class ShopManager : MonoBehaviour
     {
         currentShopItems.Clear();
 
-        currentShopItems.AddRange(GetRandomItems(statPool, 4));
+        currentShopItems.AddRange(GetRandomItems(statPool, 2));
         currentShopItems.AddRange(GetRandomItems(weaponPool, 2));
         currentShopItems.AddRange(GetRandomItems(relicPool, 2));
     }
@@ -106,10 +107,12 @@ public class ShopManager : MonoBehaviour
                 break;
             case ShopItemType.Stat:
                 playerStats.ApplyUpgrade(item.statUpgrade);
+                //rojectile.ApplyUpgrade(item.statUpgrade);
                 break;
             case ShopItemType.Relic:
-                // future
+                //playerStats.ApplyRelic(item.relic); 
                 break;
+            
         }
 
         currentShopItems.Remove(item);
