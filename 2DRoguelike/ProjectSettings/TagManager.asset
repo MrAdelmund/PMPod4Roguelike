@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Boss
   - GameManager
+  - Enemy
+  - player
+  - Fireball
+  - Bullet
+  - bullet
   layers:
   - Default
   - TransparentFX
@@ -15,7 +20,7 @@ TagManager:
   - UI
   - Boss
   - Boss Weapon
-  - 
+  - Player
   - 
   - 
   - 
