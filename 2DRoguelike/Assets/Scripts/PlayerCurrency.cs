@@ -2,11 +2,16 @@ using UnityEngine;
 
 public class PlayerCurrency : MonoBehaviour
 {
-    public int gold = 0;
+    public float gold = 100;
+    private PlayerStats stats;
+    void Awake()
+    {
+        stats = GetComponent<PlayerStats>();
+    }
 
     public void AddGold(int amount)
     {
-        gold += amount;
+        gold += amount * stats.goldBoost;
         // Optionally trigger UI update
     }
 

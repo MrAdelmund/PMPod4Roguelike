@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Runtime.ConstrainedExecution;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,6 +10,7 @@ public class WeaponController : MonoBehaviour
     private List<WeaponSO> equippedWeapons = new List<WeaponSO>();
     private Dictionary<WeaponSO, float> fireTimers = new Dictionary<WeaponSO, float>();
     private PlayerStats stats;
+    private float CritMult = 1;
 
     [Header("Weapon Slots (child transforms around player)")]
     public List<Transform> weaponSlots;
@@ -74,6 +77,15 @@ public class WeaponController : MonoBehaviour
         }
     }
 
+    private void Crit()
+    {
+        // crit chance
+        if (stats.critChance >= UnityEngine.Random.Range(1f, 100f))
+        {
+            CritMult = 2;
+
+        }
+    }
 
     private void Fire(WeaponSO weapon, Transform spawnPoint)
     {
@@ -85,7 +97,8 @@ public class WeaponController : MonoBehaviour
         var dir = (mousePos - goPos).normalized;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
         mousePos.z = 0;
-        
+        CritMult = 1;
+        Crit();
 
         // Rotate the spawn point (weapon sprite) to face the target
         spawnPoint.right = dir; // assumes the sprite points "up"
@@ -98,8 +111,8 @@ public class WeaponController : MonoBehaviour
 
         // Make projectile face the same direction as weapon
         proj.transform.right = dir;
-
-        float finalDamage = weapon.damage * stats.damageMultiplier;
+       
+        float finalDamage = weapon.damage * stats.damageMultiplier * CritMult;
 
         proj.Initialize(
             finalDamage,
@@ -107,9 +120,9 @@ public class WeaponController : MonoBehaviour
             weapon.range,
             dir
         );
+        
     }
     public Transform target;
     float radiusInPixels = 150;
-
    
 }

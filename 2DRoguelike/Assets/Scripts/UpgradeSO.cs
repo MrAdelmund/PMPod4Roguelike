@@ -6,7 +6,9 @@ public enum PlayerStatType
     MoveSpeed,
     DamageMultiplier,
     HealthRegen,
-    ShotSpeed
+    ShotSpeed,
+    CritChance,
+    GoldBoost
 }
 
 [CreateAssetMenu(menuName = "Roguelite/Upgrade")]

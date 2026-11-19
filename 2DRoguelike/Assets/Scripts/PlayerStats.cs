@@ -11,9 +11,10 @@ public class PlayerStats : MonoBehaviour
     public float damageMultiplier;
     public float regenInterval;
     public float regenAmount;
-
+    public float critChance;
     public float regenTimer;
     public float shotSpeed;
+    public float goldBoost;
     private bool dead = false;
     public void Initialize(PlayerClassSO newClass)
     {
@@ -65,6 +66,14 @@ public class PlayerStats : MonoBehaviour
                 shotSpeed += upgrade.flatBonus;
                 shotSpeed *= (1 - 1 / upgrade.percentBonus);
                 Debug.Log("Ending shot speed " + shotSpeed);
+                break;
+            case PlayerStatType.CritChance:
+                critChance += upgrade.flatBonus;
+                critChance *= (1 + upgrade.percentBonus);
+                break;
+            case PlayerStatType.GoldBoost:
+                goldBoost += upgrade.flatBonus;
+                goldBoost *= (1 + upgrade.percentBonus);
                 break;
         }
     }

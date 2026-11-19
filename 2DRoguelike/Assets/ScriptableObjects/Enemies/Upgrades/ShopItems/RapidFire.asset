@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 975b1762b0430894790d01dee7582a53, type: 3}
   m_Name: RapidFire
   m_EditorClassIdentifier: 
-  itemName: Rapid Fire R
+  itemName: 'Rapid Fire '
   type: 1
   cost: 15
   weapon: {fileID: 0}

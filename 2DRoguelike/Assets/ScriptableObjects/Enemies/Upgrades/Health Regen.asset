@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Health Regen
   m_EditorClassIdentifier: 
   upgradeName: Unlock Health Regen
-  description: Regain 5 health every 5 seconds
+  description: Regain 5 health every 5 seconds (Does not stack)
   icon: {fileID: 21300000, guid: 4e00491a45a8fb24d91fcb870c0364fa, type: 3}
   statType: 3
   flatBonus: 5
