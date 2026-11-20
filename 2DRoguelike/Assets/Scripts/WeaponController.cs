@@ -120,7 +120,7 @@ public class WeaponController : MonoBehaviour
             weapon.range,
             dir
         );
-        
+        Debug.Log(finalDamage);
     }
     public Transform target;
     float radiusInPixels = 150;

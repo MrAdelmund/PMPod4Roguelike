@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 742bb278ab4f36748b829c79f95c9eb6, type: 3}
   m_Name: Gold boost
   m_EditorClassIdentifier: 
-  upgradeName: Golden Booster
+  upgradeName: Gold Booster
   description: Doubles gold gained (Does not stack)
   icon: {fileID: 21300000, guid: 0e047d447701c4847a52b127ea85c326, type: 3}
   statType: 6

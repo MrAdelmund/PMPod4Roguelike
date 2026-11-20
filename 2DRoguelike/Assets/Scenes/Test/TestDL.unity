@@ -2829,6 +2829,7 @@ MonoBehaviour:
   statPool:
   - {fileID: 11400000, guid: 416d8d4a29baf8c49ab8e861c4084a89, type: 2}
   - {fileID: 11400000, guid: bcd3e897590ed8e43966231aea95ea07, type: 2}
+  - {fileID: 11400000, guid: c3203c50b9e3cee41a31451312f99ddd, type: 2}
   weaponPool:
   - {fileID: 11400000, guid: d1d9d174277c1dc4caf51a42557e05a0, type: 2}
   - {fileID: 11400000, guid: 02192158f93547241b9f6c274bf9c4f7, type: 2}

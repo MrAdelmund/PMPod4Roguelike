@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Shotgun
   sprite: {fileID: 21300000, guid: 691e2b9fa83a3104b9645227c4510b87, type: 3}
-  damage: 100
-  fireRate: 0.5
+  damage: 50
+  fireRate: 1
   projectileSpeed: 10
   range: 2
   projectilePrefab: {fileID: 4493983500933458435, guid: 72657a49539485043bc7fe7af565a4a5, type: 3}

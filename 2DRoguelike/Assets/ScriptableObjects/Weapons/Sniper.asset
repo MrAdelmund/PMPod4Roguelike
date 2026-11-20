@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponName: Sniper
   sprite: {fileID: 21300000, guid: f70acc0460cd4a74480b1c9f8057c5e3, type: 3}
   damage: 200
-  fireRate: 0.1
+  fireRate: 0.5
   projectileSpeed: 10
   range: 10
   projectilePrefab: {fileID: 4493983500933458435, guid: 72657a49539485043bc7fe7af565a4a5, type: 3}
